@@ -2,12 +2,12 @@ import React from 'react';
 import './App.css';
 import PintList from './PintList.jsx';
 import KegList from './KegList.jsx';
+import Header from './Header.jsx';
 
 
 var leftColumn = {
   width: "31%",
   border: "2px solid",
-  // borderRadius: "5%",
   borderColor: "green",
   position: "absolute",
   left: "1.5%",
@@ -28,7 +28,6 @@ var centerColumn = {
 var rightColumn = {
   width: "31%",
   border: "2px solid",
-  // borderRadius: "5%",
   borderColor: "green",
   position: "absolute",
   left: "67.5%",
