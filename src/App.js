@@ -7,19 +7,6 @@ import  Header from "./Header.jsx";
 import Home from "./Home.jsx";
 import { Switch, Route, Router } from 'react-router-dom';
 
-var menu = {
-  width: "80%",
-  border: "2px solid",
-  borderColor: "blue",
-  position: "absolute",
-  left: "1.5%",
-  height: "898px",
-  margin: "8%",
-}
-
-const header = {
-  width: "100%",
-}
 
 function App() {
   return (
@@ -35,9 +22,6 @@ function App() {
     <Route exact path="/PintListEmp" component={PintListEmp}/>
     </div>
     </Switch>
-    <div style={menu}>
-
-    </div>
     </div>
   );
 }
