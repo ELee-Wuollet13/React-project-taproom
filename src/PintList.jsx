@@ -18,45 +18,45 @@ const pintList = [
  {
     name: "Sunname",
     brand: "Lents International",
-    cost: "9:00am - 2:00pm",
-    alcoholContent: "4A",
+    cost: "$4",
+    alcoholContent: "7%",
     remainingAmount: "124"
 
  },
  {
     name: "Monname",
     brand: "Pioneer Courthouse Square",
-    cost: "10:00am - 2:00pm",
-    alcoholContent: "7C",
+    cost: "$7",
+    alcoholContent: "7%",
     remainingAmount: "124"
 
  },
  {
     name: "Tuesname",
     brand: "Hillsboro",
-    cost: "5:00pm - 8:30pm",
-    alcoholContent: "1F",
+    cost: "$3",
+    alcoholContent: "4%",
     remainingAmount: "124"
  },
  {
     name: "Wednesname",
     brand: "Shemanski Park",
-    cost: "10:00am - 2:00pm",
-    alcoholContent: "3E",
+    cost: "$4",
+    alcoholContent: "12%",
     remainingAmount: "124"
  },
  {
     name: "Thursname",
     brand: "Northwest Portland",
-    cost: "2:00pm - 6:00pm",
-    alcoholContent: "6D",
+    cost: "$8",
+    alcoholContent: "11%",
     remainingAmount: "124"
  },
  {
     name: "Saturname",
     brand: "Beaverton",
-    cost: "10:00am - 1:30pm",
-    alcoholContent: "9G",
+    cost: "$6",
+    alcoholContent: "9%",
     remainingAmount: "124"
  }
 ];
