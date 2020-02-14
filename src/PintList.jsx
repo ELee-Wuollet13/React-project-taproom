@@ -14,54 +14,62 @@ var headerStyles = {
 
 };
 
-const pintSchedule = [
+const pintList = [
  {
-    day: "Sunday",
-    location: "Lents International",
-    hours: "9:00am - 2:00pm",
-    booth: "4A"
+    name: "Sunname",
+    brand: "Lents International",
+    cost: "9:00am - 2:00pm",
+    alcoholContent: "4A",
+    remainingAmount: "124"
+
  },
  {
-    day: "Monday",
-    location: "Pioneer Courthouse Square",
-    hours: "10:00am - 2:00pm",
-    booth: "7C"
+    name: "Monname",
+    brand: "Pioneer Courthouse Square",
+    cost: "10:00am - 2:00pm",
+    alcoholContent: "7C",
+    remainingAmount: "124"
+
  },
  {
-    day: "Tuesday",
-    location: "Hillsboro",
-    hours: "5:00pm - 8:30pm",
-    booth: "1F"
+    name: "Tuesname",
+    brand: "Hillsboro",
+    cost: "5:00pm - 8:30pm",
+    alcoholContent: "1F",
+    remainingAmount: "124"
  },
  {
-    day: "Wednesday",
-    location: "Shemanski Park",
-    hours: "10:00am - 2:00pm",
-    booth: "3E"
+    name: "Wednesname",
+    brand: "Shemanski Park",
+    cost: "10:00am - 2:00pm",
+    alcoholContent: "3E",
+    remainingAmount: "124"
  },
  {
-    day: "Thursday",
-    location: "Northwest Portland",
-    hours: "2:00pm - 6:00pm",
-    booth: "6D"
+    name: "Thursname",
+    brand: "Northwest Portland",
+    cost: "2:00pm - 6:00pm",
+    alcoholContent: "6D",
+    remainingAmount: "124"
  },
  {
-    day: "Saturday",
-    location: "Beaverton",
-    hours: "10:00am - 1:30pm",
-    booth: "9G"
+    name: "Saturname",
+    brand: "Beaverton",
+    cost: "10:00am - 1:30pm",
+    alcoholContent: "9G",
+    remainingAmount: "124"
  }
 ];
 
 function PintList(){
   return (
     <div style={headerStyles}>
-    {pintSchedule.map((pint,index) =>
+    {pintList.map((pint,index) =>
       <Pint
-      day={pint.day}
-      location={pint.location}
-      hours={pint.hours}
-      booth={pint.booth}
+      name={pint.name}
+      brand={pint.brand}
+      cost={pint.cost}
+      alcoholContent={pint.alcoholContent}
       key={index}/>
     )}
     </div>
