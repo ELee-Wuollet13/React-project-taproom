@@ -8,13 +8,13 @@ import Home from "./Home.jsx";
 import { Switch, Route, Router } from 'react-router-dom';
 
 
+
 function App() {
   return (
     <div className="App">
-    <header className="App-header">
     <Navbar/>
+    <div className="App-header">
     <Header/>
-    </header>
     <Switch>
     <div className="content">
     <Route exact path="/" component={Home}/>
@@ -22,6 +22,7 @@ function App() {
     <Route exact path="/PintListEmp" component={PintListEmp}/>
     </div>
     </Switch>
+    </div>
     </div>
   );
 }

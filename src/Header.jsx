@@ -1,20 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Router } from 'react-router-dom';
+import Saloon from './Saloon.jpg'
 
 
 function Header(){
   return (
     <div className='header'>
     <style jsx>{`
-      .textBox {
-        color: red;
+
+      .Saloon {
+        z-index: -1;
+        border-radius: 30px;
       }
       `}</style>
 
 
+      <img className='Saloon' src={Saloon}/>
       <div className='textBox'>
-      <h1> The Watering Hole </h1>
       </div>
       </div>
 
