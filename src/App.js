@@ -4,6 +4,8 @@ import PintList from './PintList.jsx';
 import PintListEmp from './PintListEmp.jsx';
 import  Navbar from "./Navbar.jsx";
 import  Header from "./Header.jsx";
+import Home from "./Home.jsx";
+import { Switch, Route, Router } from 'react-router-dom';
 
 var menu = {
   width: "80%",
@@ -23,12 +25,18 @@ function App() {
   return (
     <div className="App">
     <header className="App-header">
-    <Header/>
     <Navbar/>
+    <Header/>
     </header>
+    <Switch>
+    <div className="content">
+    <Route exact path="/" component={Home}/>
+    <Route exact path="/PintList" component={PintList}/>
+    <Route exact path="/PintListEmp" component={PintListEmp}/>
+    </div>
+    </Switch>
     <div style={menu}>
-    <PintList/>
-    <PintListEmp/>
+
     </div>
     </div>
   );

@@ -1,5 +1,7 @@
 import React from "react";
-import Pint from "./Pint";
+import PintEmp from "./PintEmp";
+import { Link } from 'react-router-dom';
+import { Router } from 'react-router-dom';
 
 
 var headerStyles = {
@@ -10,11 +12,9 @@ var headerStyles = {
   textshadow: "3px 3px white",
   width: "100%",
   zIndex: "+1"
-
-
 };
 
-const pintList = [
+const pintListEmp = [
  {
     name: "Sunname",
     brand: "Lents International",
@@ -108,12 +108,12 @@ const pintList = [
 function PintListEmp(){
   return (
     <div style={headerStyles}>
-    {pintList.map((pint,index) =>
-      <Pint
-      name={pint.name}
-      brand={pint.brand}
-      cost={pint.cost}
-      alcoholContent={pint.alcoholContent}
+    {pintListEmp.map((pintEmp,index) =>
+      <PintEmp
+      name={pintEmp.name}
+      brand={pintEmp.brand}
+      cost={pintEmp.cost}
+      alcoholContent={pintEmp.alcoholContent}
       key={index}/>
     )}
     </div>
