@@ -1,55 +1,39 @@
 import React from 'react';
 import './App.css';
 import PintList from './PintList.jsx';
-import KegList from './KegList.jsx';
+import PintListEmp from './PintListEmp.jsx';
 import Header from './Header.jsx';
+// import Navbar from './Navbar.jsx';
 
-
-var leftColumn = {
-  width: "31%",
+var menu = {
+  width: "80%",
   border: "2px solid",
-  borderColor: "green",
+  borderColor: "blue",
   position: "absolute",
   left: "1.5%",
   height: "898px",
+  margin: "8%",
 }
 
-var centerColumn = {
-  marginTop: "7%",
-  width: "31%",
-  border: "4px solid",
-  borderRadius: "40%",
-  borderColor: "green",
-  position: "absolute",
-  left: "34.5%",
-  zIndex: "+1"
+const header = {
+  width: "100%",
 }
-
-var rightColumn = {
-  width: "31%",
-  border: "2px solid",
-  borderColor: "green",
-  position: "absolute",
-  left: "67.5%",
-  height: "898px",
-}
-var dirtStyle = {
-  color: "#663300",
-}
-
 
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
-      <h1 style={dirtStyle}>Danny Dirtfarmer's practical keg</h1>
+      <div style={header}>
+      // <Navbar/>
+        <Header/>
+      </div>
       <div className="row">
-        <div style={leftColumn}>
+        <div style={menu}>
           <PintList/>
+          <PintListEmp/>
         </div>
-        <div style={rightColumn}>
-        <KegList/>
-        </div>
+
       </div>
       </header>
     </div>
