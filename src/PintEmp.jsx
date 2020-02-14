@@ -19,4 +19,4 @@ Pint.propTypes = {
 };
 
 
-export default Keg;
+export default Pint;

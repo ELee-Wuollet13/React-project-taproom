@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import PintList from './PintList.jsx';
 import PintListEmp from './PintListEmp.jsx';
-import Header from './Header.jsx';
-// import Navbar from './Navbar.jsx';
+import  Navbar from "./Navbar.jsx";
+import  Header from "./Header.jsx";
 
 var menu = {
   width: "80%",
@@ -22,20 +22,14 @@ const header = {
 function App() {
   return (
     <div className="App">
-
-      <header className="App-header">
-      <div style={header}>
-      // <Navbar/>
-        <Header/>
-      </div>
-      <div className="row">
-        <div style={menu}>
-          <PintList/>
-          <PintListEmp/>
-        </div>
-
-      </div>
-      </header>
+    <header className="App-header">
+    <Header/>
+    <Navbar/>
+    </header>
+    <div style={menu}>
+    <PintList/>
+    <PintListEmp/>
+    </div>
     </div>
   );
 }
