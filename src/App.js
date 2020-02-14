@@ -1,26 +1,62 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import PintList from './PintList.jsx';
+import KegList from './KegList.jsx';
+
+
+var leftColumn = {
+  width: "31%",
+  border: "2px solid",
+  // borderRadius: "5%",
+  borderColor: "green",
+  position: "absolute",
+  left: "1.5%",
+  height: "898px",
+}
+
+var centerColumn = {
+  marginTop: "7%",
+  width: "31%",
+  border: "4px solid",
+  borderRadius: "40%",
+  borderColor: "green",
+  position: "absolute",
+  left: "34.5%",
+  zIndex: "+1"
+}
+
+var rightColumn = {
+  width: "31%",
+  border: "2px solid",
+  // borderRadius: "5%",
+  borderColor: "green",
+  position: "absolute",
+  left: "67.5%",
+  height: "898px",
+}
+var dirtStyle = {
+  color: "#663300",
+}
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1 style={dirtStyle}>Danny Dirtfarmer's practical keg</h1>
+      <div className="row">
+        <div style={leftColumn}>
+          <PintList/>
+        </div>
+        <div style={rightColumn}>
+        <KegList/>
+        </div>
+      </div>
       </header>
     </div>
   );
 }
+
+
 
 export default App;
