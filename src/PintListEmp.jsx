@@ -4,12 +4,16 @@ import { Link } from 'react-router-dom';
 import { Router } from 'react-router-dom';
 
 
-var headerStyles = {
+const headerStyles = {
   fontFamily: 'sans-serif',
   position: 'absolute',
-  textshadow: "3px 3px white",
-  width: "100%",
-  zIndex: "+1"
+  textAlign: 'center',
+  textShadow: "1px 1px gray",
+  zIndex: "+1",
+  backgroundColor: "rgba(50,50,50,.7)",
+  borderRadius: "25px",
+  width: "35%",
+  marginLeft: "30%",
 };
 
 const pintListEmp = [

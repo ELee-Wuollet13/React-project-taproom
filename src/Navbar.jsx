@@ -10,9 +10,10 @@ var navButton = {
   fontFamily: 'Fira Sans',
   fontSize: "30px",
   borderRadius: "50%",
-  backgroundColor: "rgba(0,0,0,0)",
+  backgroundColor: "rgba(50,50,50,.7)",
   margin: "3%",
-  color: "#663300"
+  color: "#663300",
+  marginLeft: "15%"
 }
 
 function Navbar() {

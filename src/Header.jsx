@@ -12,6 +12,9 @@ function Header(){
       .Saloon {
         z-index: -1;
         border-radius: 30px;
+        width: 95%;
+        margin-left: 2%;
+        position: absolute;
       }
       `}</style>
 

@@ -2,16 +2,16 @@ import React from "react";
 import Pint from "./Pint";
 
 
-var headerStyles = {
+const headerStyles = {
   fontFamily: 'sans-serif',
   position: 'absolute',
-  color: "#663300",
-  fontSize: "16px",
-  textshadow: "3px 3px white",
-  width: "100%",
-  zIndex: "+1"
-
-
+  textAlign: 'center',
+  textShadow: "1px 1px gray",
+  width: "35%",
+  marginLeft: "30%",
+  zIndex: "+1",
+  backgroundColor: "rgba(50,50,50,.7)",
+  borderRadius: "25px",
 };
 
 const pintList = [
@@ -21,7 +21,6 @@ const pintList = [
     cost: "$4",
     alcoholContent: "7%",
     remainingAmount: "124"
-
   },
   {
     name: "Monname",
@@ -29,7 +28,6 @@ const pintList = [
     cost: "$7",
     alcoholContent: "7%",
     remainingAmount: "124"
-
   },
   {
     name: "Tuesname",
