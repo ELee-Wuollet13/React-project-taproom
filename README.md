@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# _Old Time Saloon_
 
-## Available Scripts
+#### _This program allows the user to review a broad selection of beers_
 
-In the project directory, you can run:
+#### By _**Everett Lee-Wuollet**_
 
-### `yarn start`
+## Description
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+_This is an application for both a customer and employee of a bar. It provides separate views for each, with useful information like price, brand and how many pints are left in the keg._
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Setup/Installation Requirements
 
-### `yarn test`
+* _Access the GitHub repository by copying this (https://github.com/ELee-Wuollet13/React-project-taproom) link into a console command to 'git clone [link]'_
+* _navigate into the program and enter the console command 'bash startup.bash' this will automatically run 'npm install and npm run start'. As of submission no other setup is required._
+* _In your browser go to 'localhost:3000'_
+* _click the Navbar links to access the menus_
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Known Bugs
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+_As of submission there are no known bugs_
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Support and contact details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_If you have any questions comments or concerns please contact me via Email at everett.leewuollet@gmail.com_
 
-### `yarn eject`
+## Technologies Used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+_This app was made using React_
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### License
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+*{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright (c) 2016 **_Everett Lee-Wuollet_**

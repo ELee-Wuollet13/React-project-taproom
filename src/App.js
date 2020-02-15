@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import PintList from './PintList.jsx';
 import PintListEmp from './PintListEmp.jsx';
+import newKeg from './newKeg.jsx';
 import  Navbar from "./Navbar.jsx";
 import  Header from "./Header.jsx";
 import Home from "./Home.jsx";
@@ -20,6 +21,8 @@ function App() {
     <Route exact path="/" component={Home}/>
     <Route exact path="/PintList" component={PintList}/>
     <Route exact path="/PintListEmp" component={PintListEmp}/>
+    <Route exact path="/newKeg" component={newKeg}/>
+
     </div>
     </Switch>
     </div>
