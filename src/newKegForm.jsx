@@ -32,9 +32,11 @@ function NewKegForm(props){
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
   props.onNewKegCreation({brand: _brand.value, name: _name.value, cost: _cost.value, alcoholContent: _alcoholContent.value, remainingAmount: _remainingAmount.value, id: v4, timeOpen: new Moment()});
+    _brand.value = '';
     _name.value = '';
     _cost.value = '';
     _alcoholContent.value = '';
+    _remainingAmount.value = '';
   }
 
   return (

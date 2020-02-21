@@ -10,10 +10,10 @@ function Pint(props){
 }
 
 Pint.propTypes = {
-  name: PropTypes.string.isRequired,
-  brand: PropTypes.string.isRequired,
-  cost: PropTypes.string.isRequired,
-  alcoholContent: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  brand: PropTypes.string,
+  cost: PropTypes.string,
+  alcoholContent: PropTypes.string,
   remainingAmount: PropTypes.string,
 };
 
