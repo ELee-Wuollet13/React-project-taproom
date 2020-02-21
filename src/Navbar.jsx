@@ -12,20 +12,17 @@ const navButton = {
   marginLeft: "10%"
 }
 
+const navbarStyles = {
+  fontFamily: 'Fira Sans',
+  fontSize: "30px",
+  backgroundColor: "rgba(50,50,50,.7)",
+  margin: "3%",
+  color: "#663300",
+  
+}
 function Navbar() {
   return(
-    <div class="navbarStyles">
-    <style jsx>{`
-      .navbarStyles {
-        fontFamily: 'Fira Sans',
-        fontSize: "30px",
-        borderRadius: "12%",
-        backgroundColor: "rgba(50,50,50,.7)",
-        margin: "3%",
-        color: "#663300",
-        marginLeft: "15%"
-      }
-    `}</style>
+    <div style={navbarStyles}>
     <Link to ='/pintList'><button style={navButton}>Customer</button></Link>
     <Link to ='/'><button style={navButton}>Home</button></Link>
     <Link to ='/pintListEmp'><button style={navButton}>Employee</button></Link>
