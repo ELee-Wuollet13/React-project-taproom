@@ -1,9 +1,9 @@
 import React from 'react';
 import ConfirmationQuestions from './ConfirmationQuestions.jsx';
-import NewTicketForm from './NewTicketForm.jsx';
+import NewKegForm from './NewKegForm.jsx';
 import PropTypes from "prop-types";
 
-class NewTicketControl extends React.Component {
+class NewKegControl extends React.Component {
 
   constructor(props) {
     super(props);
@@ -21,7 +21,7 @@ class NewTicketControl extends React.Component {
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
-      currentlyVisibleContent = <NewTicketForm onNewTicketCreation={this.props.onNewTicketCreation}/>;
+      currentlyVisibleContent = <NewKegForm onNewKegCreation={this.props.onNewKegCreation}/>;
     } else {
       currentlyVisibleContent = <ConfirmationQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
     }
@@ -32,7 +32,7 @@ class NewTicketControl extends React.Component {
     );
   }
 }
-NewTicketControl.propTypes = {
-  onNewTicketCreation: PropTypes.func
+NewKegControl.propTypes = {
+  onNewKegCreation: PropTypes.func
 };
-export default NewTicketControl;
+export default NewKegControl;

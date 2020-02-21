@@ -18,7 +18,7 @@ const navbarStyles = {
   backgroundColor: "rgba(50,50,50,.7)",
   margin: "3%",
   color: "#663300",
-  
+
 }
 function Navbar() {
   return(
@@ -26,7 +26,7 @@ function Navbar() {
     <Link to ='/pintList'><button style={navButton}>Customer</button></Link>
     <Link to ='/'><button style={navButton}>Home</button></Link>
     <Link to ='/pintListEmp'><button style={navButton}>Employee</button></Link>
-    <Link to ='/newKeg'><button style={navButton}>New Keg</button></Link>
+    <Link to ='/NewKegForm'><button style={navButton}>New Keg</button></Link>
     </div>
   )
 }

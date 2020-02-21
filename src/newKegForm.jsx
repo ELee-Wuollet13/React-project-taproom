@@ -3,6 +3,15 @@ import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import Moment from 'moment';
 
+const newKegFormStyles = {
+  fontFamily: 'sans-serif',
+  position: 'absolute',
+  textAlign: 'center',
+
+  zIndex: "+0",
+
+};
+
 function NewKegForm(props){
   let _names = null;
   let _location = null;
@@ -18,7 +27,7 @@ function NewKegForm(props){
 
   return (
     <div>
-      <form style={{margin: "10px", position: "relative", zIndex: "550"}}onSubmit={handleNewKegFormSubmission}>
+      <form style={newKegFormStyles} onSubmit={handleNewKegFormSubmission}>
         <input
         type='text'
         id='names'

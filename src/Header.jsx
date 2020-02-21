@@ -10,7 +10,7 @@ function Header(){
     <style jsx>{`
 
       .Saloon {
-        z-index: -1;
+        z-index: -3;
         border-radius: 30px;
         width: 95%;
         margin-left: 2%;
