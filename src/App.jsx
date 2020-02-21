@@ -23,50 +23,32 @@ class App extends React.Component {
   }
   handleAddingNewKegToList(newKeg){
     console.log('newKeg: ', newKeg);
-    // const position = this.indexOf()
     const newMasterKegList = this.state.masterKegList.slice();
-    // console.log('masterKegList: ', this.state.masterKegList);
-    // console.log('newMasterKegList: ', newMasterKegList);
     newKeg.formattedWaitTime = (newKeg.timeOpen).fromNow(true)
     newMasterKegList.push(newKeg);
-    // console.log('newMasterKegList: ', newMasterKegList);
     this.setState({
       masterKegList: newMasterKegList
     });
   }
 
-  // handleAddingEditKegToList =(editKeg) =>{
-    //
-    //   console.log(this.getIndex);
-    //   const editMasterKegList = this.state.masterKegList.slice(1);
-    //   console.log('masterKegList: ', this.state.masterKegList);
-    //   console.log('editMasterKegList: ', editMasterKegList);
-    //   editKeg.formattedWaitTime = (editKeg.timeOpen).fromNow(true)
-    //   editMasterKegList.push(editKeg);
-    //   console.log('editMasterKegList: ', editMasterKegList);
-    //   this.setState({
-      //     masterKegList: editMasterKegList
-      //   });
-      // }
+    //   updateKegElapsedWaitTime() {
+    //     console.log("check");
+    //     let newMasterKegList = this.state.masterKegList.slice();
+    //     newMasterKegList.forEach((keg) =>
+    //     keg.formattedWaitTime = (keg.timeOpen).fromNow(true)
+    //   );
+    //   this.setState({masterKegList: newMasterKegList})
+    // }
 
-      updateKegElapsedWaitTime() {
-        console.log("check");
-        let newMasterKegList = this.state.masterKegList.slice();
-        newMasterKegList.forEach((keg) =>
-        keg.formattedWaitTime = (keg.timeOpen).fromNow(true)
-      );
-      this.setState({masterKegList: newMasterKegList})
-    }
-
-    componentDidMount() {
-      this.waitTimeUpdateTimer = setInterval(() =>
-      this.updateKegElapsedWaitTime(),
-      5000
-    );
-  }
-  componentWillUnmount(){
-    clearInterval(this.waitTimeUpdateTimer);
-  }
+  //   componentDidMount() {
+  //     this.waitTimeUpdateTimer = setInterval(() =>
+  //     this.updateKegElapsedWaitTime(),
+  //     5000
+  //   );
+  // }
+  // componentWillUnmount(){
+  //   clearInterval(this.waitTimeUpdateTimer);
+  // }
 
 
   render() {
