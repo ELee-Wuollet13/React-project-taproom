@@ -8,15 +8,8 @@ class NewKegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      this.setState({formVisibleOnPage: true});
     };
-    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
-  }
-
-  handleTroubleshootingConfirmation(){
-    this.setState({formVisibleOnPage: true});
-  }
-
 
   render(){
     let currentlyVisibleContent = null;
