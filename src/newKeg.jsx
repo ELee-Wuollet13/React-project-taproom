@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 import { Router } from 'react-router-dom';
 
 
-
-function newKeg(){
+function newKeg() {
   return (
-
-    <div class="newKegStyles">
-    <style jsx>{`
-      .newKegStyles {
-        color: 'white'
+      const newKegStyles = {
+        color: 'white',
         fontFamily: 'sans-serif',
         position: 'absolute',
         textAlign: 'center',
@@ -21,7 +17,7 @@ function newKeg(){
         backgroundColor: "rgba(50,50,50,.7)",
         borderRadius: "25px",
       }
-      `}</style>
+    <div style={newKegStyles}>
       <form>
       <label>
       New Keg:
