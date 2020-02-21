@@ -62,7 +62,7 @@ class App extends React.Component {
       <Route exact path="/" component={Home}/>
       <Route exact path="/PintList" component={PintList}/>
       <Route exact path="/PintListEmp" component={PintListEmp}/>
-      <Route exact path="/NewKegFrom" component={NewKegForm}/>
+      <Route exact path="/NewKegForm" component={NewKegForm}/>
 
       </div>
       </Switch>

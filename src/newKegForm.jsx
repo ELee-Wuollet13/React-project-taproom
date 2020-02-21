@@ -3,6 +3,25 @@ import PropTypes from 'prop-types';
 import { v4 } from 'uuid';
 import Moment from 'moment';
 
+
+const newKegFormStyles = {
+  fontFamily: 'sans-serif',
+  position: 'absolute',
+  textAlign: 'center',
+  textShadow: "1px 1px gray",
+  width: "35%",
+  marginLeft: "30%",
+  marginTop: "22%",
+  zIndex: "+1",
+  backgroundColor: "rgba(50,50,50,.7)",
+  borderRadius: "25px",
+};
+
+const inputFormStyles = {
+  margin: "5px",
+}
+
+
 function NewKegForm(props){
   let _brand = null;
   let _name = null;
@@ -20,19 +39,18 @@ function NewKegForm(props){
 
   return (
     <div>
-    <h1> NEWKEG</h1>
-      <form style={{margin: "10px", position: "relative", zIndex: "550"}} onSubmit={handleNewKegFormSubmission}>
-        <input
+      <form style={newKegFormStyles} onSubmit={handleNewKegFormSubmission}>
+        <input style={inputFormStyles}
         type='text'
         id='brand'
         placeholder='Brand'
         ref={(input) => {_brand = input;}}/>
-        <input
+        <input style={inputFormStyles}
         type='text'
         id='name'
         placeholder='Beer Names'
         ref={(input) => {_name = input;}}/>
-        <input
+        <input style={inputFormStyles}
         type='number'
         id='cost'
         placeholder='cost'
@@ -42,7 +60,7 @@ function NewKegForm(props){
         id='alcoholContent'
         placeholder='alcoholContent'
         ref={(input) => {_alcoholContent = input;}}/>
-        <input
+        <input style={inputFormStyles}
         type='text'
         id='remainingAmount'
         placeholder='remainingAmount'
