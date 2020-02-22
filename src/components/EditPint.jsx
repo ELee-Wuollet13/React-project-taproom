@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { v4 } from 'uuid';
 import Moment from 'moment';
 
 const newPintFormStyles = {
@@ -20,16 +19,16 @@ const inputFormStyles = {
   margin: "5px",
 }
 
-function NewPintForm(props){
+function EditPintForm(props){
   let _brand = null;
   let _name = null;
   let _cost = null;
   let _alcoholContent = null;
   let _remainingAmount = null;
 
-  function handleNewPintFormSubmission(event) {
+  function handleEditPintFormSubmission(event) {
     event.preventDefault();
-    props.onNewPintCreation({brand: _brand.value, name: _name.value, cost: _cost.value, alcoholContent: _alcoholContent.value, remainingAmount: _remainingAmount.value, id: v4, timeOpen: new Moment()});
+    props.onEditPintCreation({brand: _brand.value, name: _name.value, cost: _cost.value, alcoholContent: _alcoholContent.value, remainingAmount: _remainingAmount.value, timeOpen: new Moment()});
     _brand.value = '';
     _name.value = '';
     _cost.value = '';
@@ -38,8 +37,8 @@ function NewPintForm(props){
   }
 
   return (
-    <div style={newPintFormStyles}>
-    <form onSubmit={handleNewPintFormSubmission}>
+    <div>
+      <form style={newPintFormStyles} onSubmit={handleEditPintFormSubmission}>
       <input style={inputFormStyles}
       type='text'
       id='brand'
@@ -65,13 +64,14 @@ function NewPintForm(props){
       id='remainingAmount'
       placeholder='remainingAmount'
       ref={(input) => {_remainingAmount = input;}}/>
-        <button type='submit'>Help!</button>
+        <button type='submit'>Update my Pint!</button>
+
       </form>
     </div>
 
   );
-}
-NewPintForm.propTypes = {
-  onNewPintCreation: PropTypes.func
-};
-export default NewPintForm;
+  }
+  EditPintForm.propTypes = {
+  onEditPintCreation: PropTypes.func
+  };
+  export default EditPintForm;

@@ -10,20 +10,20 @@ class NewPintControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
+    this.handleEmployeeVarifyingConfirmation = this.handleEmployeeVarifyingConfirmation.bind(this);
   }
 
-  handleTroubleshootingConfirmation(){
+  handleEmployeeVarifyingConfirmation(){
     this.setState({formVisibleOnPage: true});
   }
 
 
   render(){
-    let currentlyVisibleContent = NewPintForm;
+    let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewPintForm onNewPintCreation={this.props.onNewPintCreation}/>;
     } else {
-      currentlyVisibleContent = <ConfirmationQuestions onTroubleshootingConfirmation={this.handleTroubleshootingConfirmation}/>;
+      currentlyVisibleContent = <ConfirmationQuestions onEmployeeVarifyingConfirmation={this.handleEmployeeVarifyingConfirmation}/>;
     }
     return (
       <div>
