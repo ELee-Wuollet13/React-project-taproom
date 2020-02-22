@@ -1,5 +1,6 @@
 import React from "react";
 import Pint from "./Pint";
+import PropTypes from 'prop-types';
 
 
 const headerStyles = {
@@ -18,7 +19,7 @@ const headerStyles = {
 function PintList(){
   return (
     <div style={headerStyles}>
-    {pintList.map((pint, index) =>
+    {PintList.map((pint, index) =>
       <Pint
       name={pint.name}
       brand={pint.brand}
