@@ -35,7 +35,7 @@ class App extends React.Component {
       <Switch>
       <div className="content">
       <Route exact path='/' render={()=><PintList pintList={this.state.masterPintList} />} />
-      <Route path='/newpint' render={()=><NewPintControl onNewPintCreation={this.handleAddingNewPintToList} />} />
+      <Route path='/NewPintControl' render={()=><NewPintControl onNewPintCreation={this.handleAddingNewPintToList} />} />
       <Route component={Error404} />
       </div>
       </Switch>

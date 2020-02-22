@@ -12,7 +12,7 @@ function Pint(props){
 Pint.propTypes = {
   name: PropTypes.string,
   brand: PropTypes.string,
-  cost: PropTypes.string,
+  cost: PropTypes.number,
   alcoholContent: PropTypes.string,
   remainingAmount: PropTypes.string,
 };

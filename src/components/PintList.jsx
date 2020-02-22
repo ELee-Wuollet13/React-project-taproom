@@ -16,10 +16,10 @@ const headerStyles = {
 };
 
 
-function PintList(){
+function PintList(props){
   return (
     <div style={headerStyles}>
-    {PintList.map((pint, index) =>
+    {props.pintList.map((pint, index) =>
       <Pint
       name={pint.name}
       brand={pint.brand}
