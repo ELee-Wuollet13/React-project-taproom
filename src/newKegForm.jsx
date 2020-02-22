@@ -4,7 +4,7 @@ import { v4 } from 'uuid';
 import Moment from 'moment';
 
 
-const newKegFormStyles = {
+const newPintFormStyles = {
   fontFamily: 'sans-serif',
   position: 'absolute',
   textAlign: 'center',
@@ -22,16 +22,16 @@ const inputFormStyles = {
 }
 
 
-function NewKegForm(props){
+function NewPintForm(props){
   let _brand = null;
   let _name = null;
   let _cost = null;
   let _alcoholContent = null;
   let _remainingAmount = null;
 
-  function handleNewKegFormSubmission(event) {
+  function handleNewPintFormSubmission(event) {
     event.preventDefault();
-  props.onNewKegCreation({brand: _brand.value, name: _name.value, cost: _cost.value, alcoholContent: _alcoholContent.value, remainingAmount: _remainingAmount.value, id: v4, timeOpen: new Moment()});
+    props.onNewPintCreation({brand: _brand.value, name: _name.value, cost: _cost.value, alcoholContent: _alcoholContent.value, remainingAmount: _remainingAmount.value, id: v4()});
     _brand.value = '';
     _name.value = '';
     _cost.value = '';
@@ -41,7 +41,7 @@ function NewKegForm(props){
 
   return (
     <div>
-      <form style={newKegFormStyles} onSubmit={handleNewKegFormSubmission}>
+      <form style={newPintFormStyles} onSubmit={handleNewPintFormSubmission}>
         <input style={inputFormStyles}
         type='text'
         id='brand'
@@ -73,7 +73,7 @@ function NewKegForm(props){
 
   );
 }
-NewKegForm.propTypes = {
-  onNewKegCreation: PropTypes.func
+NewPintForm.propTypes = {
+  onNewPintCreation: PropTypes.func
 };
-export default NewKegForm;
+export default NewPintForm;

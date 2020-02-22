@@ -26,7 +26,7 @@ function Navbar() {
     <Link to ='/pintList'><button style={navButton}>Customer</button></Link>
     <Link to ='/'><button style={navButton}>Home</button></Link>
     <Link to ='/pintListEmp'><button style={navButton}>Employee</button></Link>
-    <Link to ='/NewKegForm'><button style={navButton}>New Keg</button></Link>
+    <Link to ='/NewPintForm'><button style={navButton}>New Pint</button></Link>
     </div>
   )
 }

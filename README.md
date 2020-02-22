@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is an application for both a customer and employee of a bar. It provides separate views for each, with useful information like price, brand and how many pints are left in the keg. This app currently has two routes, one that will display keg data to user or employee, and the other for creating new Kegs. Their is also a navbar and header, as shown in this diagram._
+_This is an application for both a customer and employee of a bar. It provides separate views for each, with useful information like price, brand and how many pints are left in the keg. This app currently has two routes, one that will display keg data to user or employee, and the other for creating new Pints. Their is also a navbar and header, as shown in this diagram._
 
 ![](./ReactSaloonDiagram.jpg)
 

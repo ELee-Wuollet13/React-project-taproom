@@ -1,14 +1,12 @@
 import React from 'react';
-import './App.css';
+import Header from "./Header.jsx";
 import PintList from './PintList.jsx';
 import Navbar from "./Navbar.jsx";
-import Header from "./Header.jsx";
 import Home from "./Home.jsx";
-import NewKegForm from "./NewKegForm.jsx";
-import NewKegControl from "./NewKegControl.jsx";
+import Error404 from "./Error404.jsx";
+import NewPintControl from "./NewPintControl.jsx";
 import Moment from 'moment';
 import { Switch, Route, Router } from 'react-router-dom';
-
 
 
 class App extends React.Component {
@@ -16,40 +14,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterKegList: []
+      masterPintList: []
     };
 
-    this.handleAddingNewKegToList = this.handleAddingNewKegToList.bind(this);
+    this.handleAddingNewPintToList = this.handleAddingNewPintToList.bind(this);
   }
-  handleAddingNewKegToList(newKeg){
-    console.log('newKeg: ', newKeg);
-    const newMasterKegList = this.state.masterKegList.slice();
-    newKeg.formattedWaitTime = (newKeg.timeOpen).fromNow(true)
-    newMasterKegList.push(newKeg);
-    this.setState({
-      masterKegList: newMasterKegList
-    });
+  handleAddingNewPintToList(newPint){
+    console.log('newPint: ', newPint);
+    const newMasterPintList = this.state.masterPintList.slice();
+    newMasterPintList.push(newPint);
+    this.setState({masterPintList: newMasterPintList});
   }
-
-    //   updateKegElapsedWaitTime() {
-    //     console.log("check");
-    //     let newMasterKegList = this.state.masterKegList.slice();
-    //     newMasterKegList.forEach((keg) =>
-    //     keg.formattedWaitTime = (keg.timeOpen).fromNow(true)
-    //   );
-    //   this.setState({masterKegList: newMasterKegList})
-    // }
-
-  //   componentDidMount() {
-  //     this.waitTimeUpdateTimer = setInterval(() =>
-  //     this.updateKegElapsedWaitTime(),
-  //     5000
-  //   );
-  // }
-  // componentWillUnmount(){
-  //   clearInterval(this.waitTimeUpdateTimer);
-  // }
-
 
   render() {
     return (
@@ -59,12 +34,13 @@ class App extends React.Component {
       <Header/>
       <Switch>
       <div className="content">
-      <Route exact path="/" component={Home}/>
+      <Route exact path='/' render={()=><PintList pintList={this.state.masterPintList} />} />
+
       <Route exact path="/PintList" component={PintList}/>
 
+      <Route path='/NewPint' render={()=><NewPintControl onNewPintCreation={this.handleAddingNewPintToList} />} />
 
-      <Route path='/NewKegForm' render={()=><NewKegControl onNewKegCreation={this.handleAddingNewKegToList} />} />
-
+      <Route component={Error404} />
       </div>
       </Switch>
       </div>
